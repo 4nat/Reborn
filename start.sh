@@ -40,7 +40,7 @@ elif [ $ch -eq 2 ];then
 clear
 cd
 rm -rf Reborn
-git clone https://github.com/demoza/Reborn
+git clone https://github.com/4nat/Reborn
 clear
 echo "[+] Success Please Restart Tool"
 exit 0
