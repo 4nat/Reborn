@@ -9,9 +9,10 @@ else
 echo 'Installing Requirements....'
 echo .
 pkg install pip2
+pkg install pip3
 apt install python3-pip
-pip2 install -r requirements.txt
-echo Made By 4NAT >update.demoza
+pip3 install -r requirements.txt
+echo Made By 4NAT >update.4nat
 echo Requirements Installed....
 echo Press Enter To Continue...
 read upd
@@ -23,7 +24,7 @@ clear
 echo -e "\e[1;31m"
 figlet Reborn
 toilet -f mono12 -F border 4NAT
-echo -e "\e[4;34mCreated By Demoza \e[0m"
+echo -e "\e[4;34mCreated By 4NAT \e[0m"
 echo -e "\e[1;32mMail: harunbusiness@aol.com \e[0m"
 echo -e "\e[4;32mYouTube Page: https://www.youtube.com/HarunMISTIK \e[0m"
 echo " "
