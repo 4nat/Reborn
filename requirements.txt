@@ -1,0 +1,4 @@
+urllib3
+python
+nano
+requests
