@@ -37,7 +37,8 @@ clear
 python sms.py
 if [ $numb = "2" ]
 then
-echo Yakinda Türkce Sürümü Gelecek...
+clear
+echo "Yakinda Türkce Sürümü Gelecek..."
 python sms.py
 	else
 		echo "Inavlid İnput!!!"
