@@ -62,4 +62,4 @@ python sms.py
 		echo "Inavlid İnput!!!"
 	fi
 fi
-
+done
