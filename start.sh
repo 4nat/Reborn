@@ -11,8 +11,8 @@ echo 'Installing Requirements....'
 echo .
 fi
 toilet -f mono12 -F border 4NAT
-echo -e "\e[4;34m 1- Termux \e[0m"
-echo -e "\e[4;34m 2- Other Linux OS. \e[0m"
+echo -e "\e[4;34m 1- Termux English \e[0m"
+echo -e "\e[4;34m 2- Termux Turkish \e[0m"
 read numb
 if [ $numb = "1" ]
 then
@@ -33,7 +33,13 @@ echo Made By 4NAT >update.4nat
 echo Requirements Installed....
 echo Press Enter To Continue...
 read upd
+clear
+python sms.py
+if [ $numb = "2" ]
+then
+echo Yakinda Türkce Sürümü Gelecek...
 python sms.py
 	else
 		echo "Inavlid İnput!!!"
 	fi
+fi
