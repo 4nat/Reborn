@@ -32,7 +32,17 @@ echo Made By 4NAT >update.4nat
 echo Requirements Installed....
 echo Press Enter To Continue...
 read upd
-
+toilet -f mono12 -F border 4NAT
+echo -e "\e[4;36m 01- Turkish \e[0m"
+echo -e "\e[4;36m 02- English\e[0m"
+read numb
+if [ $numb = "01" ]
+then
+echo -e "\e[4;34m Cok Yakinda Türkçe Sürümü Sizlerle ! \e[0m"
+python sms.py
+if [ $numb = "02" ]
+	then
+python sms.py
 	if [ $numb = "2" ]
 	then
 
@@ -53,68 +63,3 @@ read upd
 	fi
 fi
 
-fi
-while :
-do
-rm *.xxx >/dev/null 2>&1
-clear
-echo -e "\e[1;31m"
-else
-figlet Reborn
-toilet -f mono12 -F border 4NAT
-echo -e "\e[4;34mCreated By 4NAT \e[0m"
-echo -e "\e[1;32mMail: harunbusiness@aol.com \e[0m"
-echo -e "\e[4;32mYouTube Page: https://www.youtube.com/HarunMISTIK \e[0m"
-echo " "
-echo "Press 1  To  Start  SMS Bomber "
-echo "Press 2  To  Update SMS Bomber "
-echo "Press 99 To  Quit "
-read ch
-if [ $ch -eq 1 ];then
-clear
-python sms.py
-exit 0
-elif [ $ch -eq 2 ];then
-clear
-cd
-rm -rf Reborn
-git clone https://github.com/4nat/Reborn
-clear
-echo "[+] Success Please Restart Tool"
-exit 0
-elif [ $ch -eq 3 ];then
-clear
-chmod +x start.sh
-figlet Reborn
-echo "Invaild Input Press Enter To Go Home"
-read a3
-./start.sh
-exit
-elif [ $ch -eq 4 ];then
-clear
-chmod +x start.sh
-figlet Reborn
-echo "Invaild Input Press Enter To Go Home"
-read a3
-clear
-read a3
-./start.sh
-exit
-elif [ $ch -eq 99 ];then
-clear
-echo -e "\e[1;31m"
-figlet Reborn
-echo -e "\e[1;34m Created By \e[1;32m"
-toilet -f mono12 -F border 4NAT
-echo -e "\e[1;34m For Any Queries Mail Me!!!\e[0m"
-echo -e "\e[1;32m           Mail: harunbusiness@aol.com \e[0m"
-echo -e "\e[4;32m   YouTube Page: https://www.youtube.com/HarunMISTIK \e[0m"
-echo " "
-exit 0
-else
-echo -e "\e[4;32m Invalid Input !!! \e[0m"
-echo "Press Enter To Go Home"
-read a3
-clear
-fi
-done
