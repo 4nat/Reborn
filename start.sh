@@ -32,6 +32,27 @@ echo Made By 4NAT >update.4nat
 echo Requirements Installed....
 echo Press Enter To Continue...
 read upd
+
+	if [ $numb = "2" ]
+	then
+
+		if [ "$(whoami)" != 'root' ]; then
+			echo "Non-root!! (sudo sh ~/Reborn/start.sh)"
+			exit
+		else
+			apt install python3 python3-pip dos2unix
+			pip3 install requests
+			pip3 install colorama
+			cp ~/Reborn/sms.py /usr/bin/Reborn
+			dos2unix /usr/bin/Reborn
+			chmod 777 /usr/bin/
+			Reborn
+		fi
+	else
+		echo "Inavlid İnput!!!"
+	fi
+fi
+
 fi
 while :
 do
@@ -96,23 +117,4 @@ echo "Press Enter To Go Home"
 read a3
 clear
 fi
-	if [ $numb = "2" ]
-	then
-
-		if [ "$(whoami)" != 'root' ]; then
-			echo "Non-root!! (sudo sh ~/Reborn/start.sh)"
-			exit
-		else
-			apt install python3 python3-pip dos2unix
-			pip3 install requests
-			pip3 install colorama
-			cp ~/Reborn/sms.py /usr/bin/Reborn
-			dos2unix /usr/bin/Reborn
-			chmod 777 /usr/bin/
-			Reborn
-		fi
-	else
-		echo "Inavlid İnput!!!"
-	fi
-fi
-
+done
