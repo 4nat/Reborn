@@ -32,34 +32,7 @@ echo Made By 4NAT >update.4nat
 echo Requirements Installed....
 echo Press Enter To Continue...
 read upd
-toilet -f mono12 -F border 4NAT
-echo -e "\e[4;36m 01- Turkish \e[0m"
-echo -e "\e[4;36m 02- English\e[0m"
-read numb
-if [ $numb = "01" ]
-then
-echo -e "\e[4;34m Cok Yakinda Türkçe Sürümü Sizlerle ! \e[0m"
 python sms.py
-if [ $numb = "02" ]
-	then
-python sms.py
-	if [ $numb = "2" ]
-	then
-
-		if [ "$(whoami)" != 'root' ]; then
-			echo "Non-root!! (sudo sh ~/Reborn/start.sh)"
-			exit
-		else
-			apt install python3 python3-pip dos2unix
-			pip3 install requests
-			pip3 install colorama
-			cp ~/Reborn/sms.py /usr/bin/Reborn
-			dos2unix /usr/bin/Reborn
-			chmod 777 /usr/bin/
-			Reborn
-		fi
 	else
 		echo "Inavlid İnput!!!"
 	fi
-fi
-done
