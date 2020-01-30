@@ -9,6 +9,7 @@ clear
 else
 echo 'Installing Requirements....'
 echo .
+fi
 toilet -f mono12 -F border 4NAT
 echo -e "\e[4;34m 1- Termux \e[0m"
 echo -e "\e[4;34m 2- Other Linux OS. \e[0m"
