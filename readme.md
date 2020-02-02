@@ -1,3 +1,6 @@
+
+[![HitCount](http://hits.dwyl.io/4nat/Reborn.svg)](http://hits.dwyl.io/4nat/Reborn)
+
 # Disclaimer.
 The author is not responsible for damaged phones. Apply this miracle only in the study tour purposes.
 
