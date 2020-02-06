@@ -90,8 +90,6 @@ try:
    if _phone==b:print("This Number is a Protecting | Bu Numara Korunmaktadir....!");("Exiting...!");exit(); 
    elif _phone==e:print("This Number is a Protecting | Bu Numara Korunmaktadir....!");("Exiting...!");exit(); 
    else:print ("Bombing is now started!")
-except Exception:
-    pass
 
 
 _name = ''
