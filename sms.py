@@ -78,18 +78,8 @@ try:
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
-except Exception:
-    pass
 
-try:
    _phone = int(input('Enter Target Number -->> '))
-   c = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
-   d = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/b.txt").read()
-   b=int(base64.b64decode(c))
-   e=int(base64.b64decode(d))
-   if _phone==b:print("This Number is a Protecting | Bu Numara Korunmaktadir....!");("Exiting...!");exit(); 
-   elif _phone==e:print("This Number is a Protecting | Bu Numara Korunmaktadir....!");("Exiting...!");exit(); 
-   else:print ("Bombing is now started!")
 
 
 _name = ''
