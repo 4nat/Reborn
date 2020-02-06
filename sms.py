@@ -78,9 +78,12 @@ try:
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
+except Exception:
+    pass
 
-   _phone = int(input('Enter Target Number -->> '))
 
+
+_phone = int(input('Enter Target Number -->> '))
 
 _name = ''
 for x in range(12):
