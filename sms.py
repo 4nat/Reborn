@@ -100,6 +100,12 @@ _phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
 
 iteration = 0
 
+            print("==================================================================")
+            print("             Target Number           : +" + " ", _number)
+            print("             Successful Requests     : ", success)
+            print("             Failed Requests         : ", failed)
+            print("             Number of Requests Sent : ", requested)
+            print("==================================================================")
 
 
 while True:
@@ -388,14 +394,6 @@ while True:
 		print('[+] Delivery Requests Successful!')
 	except:
 		pass
-
-
-            print("==================================================================")
-            print("             Target Number           : +" + " ", _number)
-            print("             Successful Requests     : ", success)
-            print("             Failed Requests         : ", failed)
-            print("             Number of Requests Sent : ", requested)
-            print("==================================================================")
 
         try:
             failed = 0
