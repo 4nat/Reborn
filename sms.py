@@ -390,7 +390,6 @@ while True:
 		print('[-] Delivery Requests Failed!')
 
 	try:
-        print(random.choice(colors))
         print("==================================================================")
         print("                BOMBING in progress, please wait !!               ")
         print("==================================================================")
