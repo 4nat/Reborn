@@ -389,7 +389,7 @@ while True:
 	except:
 		print('[-] Delivery Requests Failed!')
 
-	try:
+    try:
         print("==================================================================")
         print("                BOMBING in progress, please wait !!               ")
         print("==================================================================")
