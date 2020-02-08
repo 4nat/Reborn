@@ -100,7 +100,7 @@ iteration = 0
 
 
 while True:
-try:
+
   if int(_phone)==int(905369413790):sys.exit()
 
   elif int(_phone)==int(+905369413790):sys.exit()
@@ -108,9 +108,6 @@ try:
   elif int(_phone)==int(9053845383838):sys.exit()
 
   elif int(_phone)==int(+9053845383838):sys.exit()
-
-except:
-      pass
 
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
