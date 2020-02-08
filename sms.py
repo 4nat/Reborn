@@ -391,18 +391,16 @@ while True:
 
 
             print("==================================================================")
-            print("                BOMBING in progress, please wait !!               ")
-            print("==================================================================")
             print("             Target Number           : +" + " ", _number)
             print("             Successful Requests     : ", success)
             print("             Failed Requests         : ", failed)
             print("             Number of Requests Sent : ", requested)
             print("==================================================================")
+
         try:
             failed = 0
             requested = 0
             success = int(requested) - int(failed)
-            bombs = int(counter) + 1
             result = getapi(_number)
         except Exception:
             result = False
@@ -415,9 +413,7 @@ while True:
         time.sleep(float(delay))
         if requested % 3 == 0:
             checkinternet()
-    print(W)
     print('\n\nBombing Completed..')
-    os.system('rm *.xxx* > /dev/null 2>&1')
     exit()
 
 		iteration += 1
