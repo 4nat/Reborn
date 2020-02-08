@@ -17,13 +17,13 @@ try:
 
   _phone=input('Enter Target Number --> ')
 
-  if int(_phone)==int(905369413790):exit()
+  if int(_phone)==int(905369413790):sys.exit(0)
 
-  elif int(_phone)==int(+905369413790):exit()
+  elif int(_phone)==int(+905369413790):sys.exit(0)
 
-  elif int(_phone)==int(9053845383838):exit()
+  elif int(_phone)==int(9053845383838):sys.exit(0)
 
-  elif int(_phone)==int(+9053845383838):exit()
+  elif int(_phone)==int(+9053845383838):sys.exit(0)
 
 except:
       pass
@@ -60,13 +60,13 @@ try:
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
-    elif int(_phone)==int(905369413790):exit()
+    elif int(_phone)==int(905369413790):sys.exit(0)
 
-    elif int(_phone)==int(+905369413790):exit()
+    elif int(_phone)==int(+905369413790):sys.exit(0)
 
-    elif int(_phone)==int(9053845383838):exit()
+    elif int(_phone)==int(9053845383838):sys.exit(0)
 
-    elif int(_phone)==int(+9053845383838):exit()
+    elif int(_phone)==int(+9053845383838):sys.exit(0)
 except Exception:
     pass
 
