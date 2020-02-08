@@ -12,18 +12,9 @@ print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
 \___  || |\  || | | || |  
     |_/\_| \_/\_| |_/\_/                                              
 ''' + Style.RESET_ALL)
-numbers = {
-    '+905369413790': 'HM',
-    '905369413790': 'HM1',
-}
-cc=numbers
-
 try:
-
   _phone=input('Enter Target Number --> ')
-
-  if int(_phone)==int(cc):sys.exit()
-
+  if int(_phone)==int("+905369413790"):sys.exit()
 except:
       pass
 
@@ -41,9 +32,7 @@ def checkinternet():
         res = True
     if res:
         print("\n\n\tIt seems That Your Internet Speed is Slow or You Are Using Proxies..")
-        banner()
-        exit()
-
+         exit()
 
 try:
     urllib.request.urlopen('https://www.google.com')
@@ -58,19 +47,7 @@ try:
         "https://raw.githubusercontent.com/4nat/Reborn/master/.notify").read().decode('utf-8')
     noti = noti.upper().strip()
     if len(noti) > 10:
-        print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
-    elif int(_phone)==int(905369413790):sys.exit()
-
-    elif int(_phone)==int(+905369413790):sys.exit()
-
-    elif int(_phone)==int(9053845383838):sys.exit(0)
-
-    elif int(_phone)==int(+9053845383838):sys.exit(0)
-except Exception:
-    pass
-
-
-
+        print('\n\n\tMessage: ' + noti + '\n\n')
 
 
 
