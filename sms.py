@@ -65,6 +65,7 @@ try:
         print('\n\n\t Message :  ' + noti + '\n\n')
 except Exception:
     pass
+
 def update():
     stuff_to_update = ['sms.py', '.version']
     for fl in stuff_to_update:
@@ -82,7 +83,7 @@ try:
             requested = 0
             success = int(requested) - int(failed)
             result = getapi(_number)
-        except Exception:
+except Exception:
             result = False
         if result:
             success = success + 1
