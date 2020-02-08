@@ -49,9 +49,26 @@ try:
 except Exception:
     pass
 
+def checknum():
+ try:
+  _phone = float(input('Enter TargetNumber --> ')) 
+ 
+  print('\tChecking Target Number!')
+  c = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
 
+  d = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/b.txt").read()
 
-_phone = input('Enter Target Number -->> ')
+  b=int(base64.b64decode(c))
+  e=int(base64.b64decode(d))
+
+  if _phone==b:print("This Number is a Protecting...!");("Exiting...!");exit(); 
+
+  elif _phone==e:print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
+
+  else:print("Bombing is now Started!")
+ except:
+      pass
+
 _name = ''
 for x in range(12):
 	_name = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
