@@ -53,13 +53,13 @@ try:
 
   _phone=input('Enter Target Number --> ')
 
-  if int(_phone)==int(905369413790):print("This Number is a Protecting...!");exit(); 
+  if int(_phone)==int(905369413790):exit()
 
-  elif int(_phone)==int(+905369413790):print("This Number is a Protecting...!");exit(); 
+  elif int(_phone)==int(+905369413790):exit()
 
-  elif int(_phone)==int(9053845383838):print("This Number is a Protecting...!");exit(); 
+  elif int(_phone)==int(9053845383838):exit()
 
-  elif int(_phone)==int(+9053845383838):print("This Number is a Protecting...!");exit();
+  elif int(_phone)==int(+9053845383838):exit()
 
   else:print("Bombing is now Started!")
 except:
