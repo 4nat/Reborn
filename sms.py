@@ -51,7 +51,7 @@ except Exception:
 
 try:
 
-  0_phone=input('Enter Target Number --> ')
+  _phones=input('Enter Target Number --> ')
 
   print('\tChecking Target Number.....!')
   c = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
@@ -63,13 +63,13 @@ try:
   print('\tNumbers Syncing ... !')
 
 
-  if int(0_phone)==int(b):print("This Number is a Protecting...!");("Exiting...!");exit(); 
+  if int(_phones)==int(b):print("This Number is a Protecting...!");("Exiting...!");exit(); 
 
 
-  elif int(0_phone)==int(e):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
+  elif int(_phones)==int(e):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
 
   else:print("Bombing is now Started!")
-  0_phone=_phone
+  _phones=_phone
 except:
       pass
 
