@@ -49,8 +49,7 @@ try:
 except Exception:
     pass
 
-def checknum():
- try:
+try:
   _phone = float(input('Enter TargetNumber --> ')) 
  
   print('\tChecking Target Number!')
@@ -66,7 +65,7 @@ def checknum():
   elif _phone==e:print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
 
   else:print("Bombing is now Started!")
- except:
+except:
       pass
 
 _name = ''
