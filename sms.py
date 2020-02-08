@@ -32,6 +32,7 @@ def checkinternet():
         res = True
     if res:
         print("\n\n\tIt seems That Your Internet Speed is Slow or You Are Using Proxies..")
+        banner()
         exit()
 
 
@@ -48,7 +49,12 @@ try:
         "https://raw.githubusercontent.com/4nat/Reborn/master/.notify").read().decode('utf-8')
     noti = noti.upper().strip()
     if len(noti) > 10:
-        print('\n\n\tMessage: ' + noti + '\n\n')
+        print('\n\n\t Message :  ' + noti + '\n\n')
+except Exception:
+    pass
+
+
+
 
 
 
