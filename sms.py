@@ -61,10 +61,10 @@ try:
   b=int(base64.b64decode(c))
   e=int(base64.b64decode(d))
 
-  if int(_phone)==b:print("This Number is a Protecting...!");("Exiting...!");exit(); 
+  if int(_phone)==int(b):print("This Number is a Protecting...!");("Exiting...!");exit(); 
 
 
-  elif int(_phone)==e:print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
+  elif int(_phone)==int(e):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
 
   else:print("Bombing is now Started!")
 except:
