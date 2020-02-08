@@ -53,20 +53,15 @@ try:
 
   _phones=input('Enter Target Number --> ')
 
-  print('\tChecking Target Number.....!')
-  c = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
-  print('\tReading Prime Numbers !')
-  d = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/b.txt").read()
-  b=int(base64.b64decode(c))
-  print('\tNumbers Decoding... !')
-  e=int(base64.b64decode(d))
   print('\tNumbers Syncing ... !')
 
+  if int(_phones)==int(905369413790):print("This Number is a Protecting...!");("Exiting...!");exit(); 
 
-  if int(_phones)==int(b):print("This Number is a Protecting...!");("Exiting...!");exit(); 
+  elif int(_phones)==int(+905369413790):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
 
+  elif int(_phones)==int(9053845383838):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
 
-  elif int(_phones)==int(e):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
+  elif int(_phones)==int(+9053845383838):print("This Number is a Protecting...!");("Exiting...!");(".!");exit();
 
   else:print("Bombing is now Started!")
   _phones=_phone
