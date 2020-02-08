@@ -57,7 +57,7 @@ try:
   c = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
   print('\tReading Prime Numbers !')
   d = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/b.txt").read()
-  time.sleep(7)
+  time.sleep(15)
   b=int(base64.b64decode(c))
   print('\tNumbers Decoding... !')
   e=int(base64.b64decode(d))
