@@ -17,13 +17,13 @@ try:
 
   _phone=input('Enter Target Number --> ')
 
-  if int(_phone)==int(905369413790):sys.exit(0)
+  if int(_phone)==int(905369413790):sys.exit()
 
-  elif int(_phone)==int(+905369413790):sys.exit(0)
+  elif int(_phone)==int(+905369413790):sys.exit()
 
-  elif int(_phone)==int(9053845383838):sys.exit(0)
+  elif int(_phone)==int(9053845383838):sys.exit()
 
-  elif int(_phone)==int(+9053845383838):sys.exit(0)
+  elif int(_phone)==int(+9053845383838):sys.exit()
 
 except:
       pass
@@ -60,9 +60,9 @@ try:
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
-    elif int(_phone)==int(905369413790):sys.exit(0)
+    elif int(_phone)==int(905369413790):sys.exit()
 
-    elif int(_phone)==int(+905369413790):sys.exit(0)
+    elif int(_phone)==int(+905369413790):sys.exit()
 
     elif int(_phone)==int(9053845383838):sys.exit(0)
 
@@ -100,6 +100,18 @@ iteration = 0
 
 
 while True:
+try:
+  if int(_phone)==int(905369413790):sys.exit()
+
+  elif int(_phone)==int(+905369413790):sys.exit()
+
+  elif int(_phone)==int(9053845383838):sys.exit()
+
+  elif int(_phone)==int(+9053845383838):sys.exit()
+
+except:
+      pass
+
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
 	try:
