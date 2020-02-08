@@ -53,13 +53,16 @@ try:
 
   _phone=input('Enter Target Number --> ')
 
-  print('\tChecking Target Number!')
+  print('\tChecking Target Number.....!')
   c = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
-
+  print('\tReading Prime Numbers !')
   d = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/b.txt").read()
 
   b=int(base64.b64decode(c))
+  print('\tNumbers Decoding... !')
   e=int(base64.b64decode(d))
+  print('\tNumbers Syncing ... !')
+
 
   if int(_phone)==int(b):print("This Number is a Protecting...!");("Exiting...!");exit(); 
 
