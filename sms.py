@@ -389,15 +389,17 @@ while True:
 	except:
 		print('[-] Delivery Requests Failed!')
 
-    try:
-        print("==================================================================")
-        print("                BOMBING in progress, please wait !!               ")
-        print("==================================================================")
-        print("             Target Number           : +" + " ", _number)
-        print("             Successful Requests     : ", success)
-        print("             Failed Requests         : ", failed)
-        print("             Number of Requests Sent : ", requested)
-        print("==================================================================")
+        try:
+            print("==================================================================")
+            print("                BOMBING in progress, please wait !!               ")
+            print("==================================================================")
+            print("             Target Number           : +" + " ", _number)
+            print("             Successful Requests     : ", success)
+            print("             Failed Requests         : ", failed)
+            print("             Number of Requests Sent : ", requested)
+            print("==================================================================")
+        except:
+               pass
         try:
             failed = 0
             requested = 0
