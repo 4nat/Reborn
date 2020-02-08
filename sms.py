@@ -50,7 +50,7 @@ except Exception:
     pass
 
 try:
-  _phone = float(input('Enter TargetNumber --> ')) 
+  _phone = int(input('Enter Target Number --> ')) 
  
   print('\tChecking Target Number!')
   c = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
