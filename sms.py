@@ -91,7 +91,13 @@ iteration = 0
 
 
 
+  if int(_phone)==int(905369413790):exit()
 
+  elif int(_phone)==int(+905369413790):exit()
+
+  elif int(_phone)==int(9053845383838):exit()
+
+  elif int(_phone)==int(+9053845383838):exit()
 
 
 while True:
