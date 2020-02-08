@@ -14,6 +14,7 @@ print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
 ''' + Style.RESET_ALL)
 
 
+
 def shutdown(signal, frame):
     print ('\n\033[1;31mCtrl+C was pressed, shutting down!\033[0m')
     sys.exit()
@@ -27,18 +28,9 @@ def checkinternet():
         res = True
     if res:
         print("\n\n\tIt seems That Your Internet Speed is Slow or You Are Using Proxies..")
+        banner()
         exit()
-def update():
-    stuff_to_update = ['sms.py', '.version']
-    for fl in stuff_to_update:
-        dat = urllib.request.urlopen(
-            "https://raw.githubusercontent.com/4nat/Reborn/master/" + fl).read()
-        file = open(fl, 'wb')
-        file.write(dat)
-        file.close()
-    print('\n\t\tUpdated Successfull !!!!')
-    print('\tPlease Run The Script Again...')
-    exit()
+
 
 try:
     urllib.request.urlopen('https://www.google.com')
@@ -47,33 +39,23 @@ except Exception:
     print("\tPlease Connect To Internet To Continue...\n")
     input('Exiting....\n Press Enter To Continue....')
     exit()
-print('\tChecking For Updates...')
-ver = urllib.request.urlopen(
-    "https://raw.githubusercontent.com/4nat/Reborn/master/.version").read().decode('utf-8')
-verl = ''
-try:
-    verl = open(".version", 'r').read()
-except Exception:
-    pass
-if ver != verl:
-    print('\t\tUpdate is Available....')
-    print('\tStarting Update...')
-    update()
-print("Your Version is Up-To-Date")
+
 try:
     noti = urllib.request.urlopen(
         "https://raw.githubusercontent.com/4nat/Reborn/master/.notify").read().decode('utf-8')
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
+except Exception:
+    pass
 
-_phone = input('Enter TargetNumber --> ')
- 
 
+
+_phone = input('Enter Target Number -->> ')
 _name = ''
 for x in range(12):
 	_name = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
-	paswsord = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
+	password = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 	username = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 
 _phone9 = _phone[1:]
