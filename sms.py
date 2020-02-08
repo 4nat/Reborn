@@ -67,7 +67,7 @@ try:
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
 
-_phone = float(input('Enter TargetNumber --> ')) 
+_phone = input('Enter TargetNumber --> ')
  
 
 _name = ''
