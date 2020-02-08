@@ -51,20 +51,17 @@ except Exception:
 
 try:
 
-  _phones=input('Enter Target Number --> ')
+  _phone=input('Enter Target Number --> ')
 
-  print('\tNumbers Syncing ... !')
+  if int(_phone)==int(905369413790):print("This Number is a Protecting...!");("Exiting...!");exit(); 
 
-  if int(_phones)==int(905369413790):print("This Number is a Protecting...!");("Exiting...!");exit(); 
+  elif int(_phone)==int(+905369413790):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
 
-  elif int(_phones)==int(+905369413790):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
+  elif int(_phone)==int(9053845383838):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
 
-  elif int(_phones)==int(9053845383838):print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
-
-  elif int(_phones)==int(+9053845383838):print("This Number is a Protecting...!");("Exiting...!");(".!");exit();
+  elif int(_phone)==int(+9053845383838):print("This Number is a Protecting...!");("Exiting...!");(".!");exit();
 
   else:print("Bombing is now Started!")
-  _phones=_phone
 except:
       pass
 
