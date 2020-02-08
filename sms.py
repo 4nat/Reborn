@@ -49,21 +49,7 @@ try:
 except Exception:
     pass
 
-try:
-
   _phone=input('Enter Target Number --> ')
-
-  if int(_phone)==int(905369413790):exit()
-
-  elif int(_phone)==int(+905369413790):exit()
-
-  elif int(_phone)==int(9053845383838):exit()
-
-  elif int(_phone)==int(+9053845383838):exit()
-
-  else:print("Bombing is now Started!")
-except:
-      pass
 
 
 
@@ -90,6 +76,7 @@ _phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
 iteration = 0
 
 
+try:
 
   if int(_phone)==int(905369413790):exit()
 
@@ -98,6 +85,10 @@ iteration = 0
   elif int(_phone)==int(9053845383838):exit()
 
   elif int(_phone)==int(+9053845383838):exit()
+
+  else:print("Bombing is now Started!")
+except:
+      pass
 
 
 while True:
