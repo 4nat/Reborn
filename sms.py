@@ -32,7 +32,8 @@ def checkinternet():
         res = True
     if res:
         print("\n\n\tIt seems That Your Internet Speed is Slow or You Are Using Proxies..")
-         exit()
+        exit()
+
 
 try:
     urllib.request.urlopen('https://www.google.com')
