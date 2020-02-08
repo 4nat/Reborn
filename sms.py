@@ -60,6 +60,13 @@ try:
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
+    elif int(_phone)==int(905369413790):exit()
+
+    elif int(_phone)==int(+905369413790):exit()
+
+    elif int(_phone)==int(9053845383838):exit()
+
+    elif int(_phone)==int(+9053845383838):exit()
 except Exception:
     pass
 
