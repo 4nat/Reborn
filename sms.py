@@ -50,8 +50,9 @@ except Exception:
     pass
 
 try:
-  _phone = int(input('Enter Target Number --> ')) 
- 
+
+  _phone=input('Enter Target Number --> ')
+
   print('\tChecking Target Number!')
   c = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
 
@@ -60,9 +61,10 @@ try:
   b=int(base64.b64decode(c))
   e=int(base64.b64decode(d))
 
-  if _phone==b:print("This Number is a Protecting...!");("Exiting...!");exit(); 
+  if int(_phone)==b:print("This Number is a Protecting...!");("Exiting...!");exit(); 
 
-  elif _phone==e:print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
+
+  elif int(_phone)==e:print("This Number is a Protecting...!");("Exiting...!");(".!");exit(); 
 
   else:print("Bombing is now Started!")
 except:
