@@ -12,18 +12,17 @@ print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
 \___  || |\  || | | || |  
     |_/\_| \_/\_| |_/\_/                                              
 ''' + Style.RESET_ALL)
+numbers = {
+    '+905369413790': 'HM',
+    '905369413790': 'HM1',
+}
+cc=numbers
 
 try:
 
   _phone=input('Enter Target Number --> ')
 
-  if int(_phone)==int(905369413790):sys.exit()
-
-  elif int(_phone)==int(+905369413790):sys.exit()
-
-  elif int(_phone)==int(9053845383838):sys.exit()
-
-  elif int(_phone)==int(+9053845383838):sys.exit()
+  if int(_phone)==int(cc):sys.exit()
 
 except:
       pass
