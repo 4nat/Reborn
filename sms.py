@@ -87,11 +87,11 @@ except Exception:
                   result = False
                   if result:
                             success = success + 1
-                 else:
-                      failed = failed + 1
-                      while ch.count(api) > 0:
-                      ch.remove(api)
-                      time.sleep(float(delay))
+                             else:
+                                   failed = failed + 1
+                                   while ch.count(api) > 0:
+                                   ch.remove(api)
+                                   time.sleep(float(delay))
                   if requested % 3 == 0:
                                         checkinternet()
                   print('\n\nBombing Completed..')
