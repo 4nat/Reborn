@@ -4,7 +4,7 @@ from time import sleep
 import urllib.request
 import base64
 init()
-
+os.system('clear')
 print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
    ___  _   _   ___ _____ 
   /   || \ | | / _ \_   _|
@@ -99,10 +99,11 @@ test2=int(base64.b64decode(num2))
 if int(first)==test1:print("This Number Protecting...");exit()
 elif int(first)==test2:print("This Number Protecting...");exit()
 else:os.system('clear')
-phonex  = input("Enter Target Number Again--->")
+_phone = input("Enter Target Number Again--->")
 os.system('clear')
-if int(first)!=int(phonex):print("Please Enter Correct Number...");exit()
-else:_phone=phonex;print("started...")
+time.sleep(2)
+if int(first)!=int(_phone):print("Please Enter Correct Number...");exit()
+time.sleep(1)
 
 
 _name = ''
