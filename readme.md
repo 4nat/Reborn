@@ -1,5 +1,6 @@
 
 [![HitCount](http://hits.dwyl.io/4nat/Reborn.svg)](http://hits.dwyl.io/4nat/Reborn)
+https://camo.githubusercontent.com/78bc23c78d48faa62c48583ed18bb8e1cd4e3876/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f54656c656772616d2d47726f75702d626c75652e737667
 
 # --> Disclaimer.
 The author is not responsible for damaged phones. Apply this miracle only in the study tour purposes.
