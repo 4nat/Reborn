@@ -1,5 +1,6 @@
+<h1 align="center">Reborn v1.5b</h1>
+<p align="center">An closed-source SMS/Call bomb for Termux and Linux.</p><br>
 
-[![HitCount](http://hits.dwyl.io/4nat/Reborn.svg)](http://hits.dwyl.io/4nat/Reborn)
 # Any Question or Contact https://t.me/reborn4nat
 # --> Disclaimer.
 The author is not responsible for damaged phones. Apply this miracle only in the study tour purposes.
