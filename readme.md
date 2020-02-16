@@ -1,7 +1,7 @@
 <h1 align="center">Reborn v1.5b</h1>
 <p align="center">An closed-source SMS/Call bomb for Termux and Linux.</p><br>
 
-# <a href="https://www.buymeacoffee.com/D25JXve" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee Please :)" style="height: 51px !important;width: 217px !important;" ></a>
+# <a align="center" href="https://www.buymeacoffee.com/D25JXve" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee Please :)" style="height: 51px !important;width: 217px !important;" ></a>
 
 # Any Question or Contact https://t.me/reborn4nat
 # --> Disclaimer.
