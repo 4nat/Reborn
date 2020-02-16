@@ -2,7 +2,7 @@
 <p align="center">An closed-source SMS/Call bomb for Termux and Linux.</p><br>
 <div class="coffe">
  <h1 align="center">Coffee</h1>
-# <a href="https://www.buymeacoffee.com/D25JXve" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee Please :)" style="height: 51px !important;width: 217px !important;"></a>
+<a align="center" href="https://www.buymeacoffee.com/D25JXve" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee Please :)" style="height: 51px !important;width: 217px !important;"></a>
  </div>
 
 # Any Question or Contact https://t.me/reborn4nat
