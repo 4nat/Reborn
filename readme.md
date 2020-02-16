@@ -13,7 +13,7 @@ The author is not responsible for damaged phones. Apply this miracle only in the
 # --> For Linux:
 To use the bomber type the following commands in Linux terminal:
  sudo apt install git
- git clone https://github.com/demoza/Reborn.git
+ git clone https://github.com/4nat/Reborn.git
  cd Reborn
  chmod +x start.sh
  sudo bash start.sh
@@ -21,14 +21,16 @@ To use the bomber type the following commands in Linux terminal:
  Bomber launched!
 
 # --> For Termux:
-git clone https://github.com/demoza/Reborn/
+git clone https://github.com/4nat/Reborn/
  Go to the directory:
  cd Reborn
  Run the file start.sh: bash start.sh or ./start.sh
  In paragraph "Enter Number" write the phone number with "+"
  Bomber launched!
 # --> Donators:
- [@] AqualreX • 5$
+ [@] M4ZART • 3$
+ [@] AquaraleX • 5$
+ [@] BuraK • 1$
 
 # --> Contact Me:
                   Mail: harunbusiness@aol.com 
