@@ -1,8 +1,11 @@
 <h1 align="center">Reborn v1.5b</h1>
 <p align="center">An closed-source SMS/Call bomb for Termux and Linux.</p><br>
 <div style="text-align:center"><a href="https://www.buymeacoffee.com/D25JXve" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee Please :)" style="height:21px;width:117px;"></a></div>
+
 # Reborn WhatsApp Discuss Group Link : https://chat.whatsapp.com/CfCZxrbmTmpCJvesj0itoS
+
 # Any Question or Contact https://t.me/reborn4nat
+
 # --> Disclaimer.
 The author is not responsible for damaged phones. Apply this miracle only in the study tour purposes.
 
