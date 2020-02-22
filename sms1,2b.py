@@ -140,15 +140,18 @@ requested = 0
 sonuc = 0
 success = int(requested) - int(failed)
 bombs = int(sonuc) + 1
-success < (int(bombs))
-print("=======================================================")
-print("             Target Number           :  " +_phone)
-print("             Number of Requests Sent : ", requested)
-print("             Successful Requests     : ", success)
-print("             Failed Requests         : ", failed)
-print("=======================================================")
+if requested + 1:success = success + 1
+else:failed = failed + 1
+while True:
+  subprocess.call("clear")
+  print("=======================================================")
+  print("             Number of Requests Sent : ", requested)
+  print("             Successful Requests     : ", success)
+  print("             Failed Requests         : ", failed)
+  print("=======================================================")
+  time.sleep(3)
 
-
+    
 while True:
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
