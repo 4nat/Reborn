@@ -146,7 +146,7 @@ success = 0
 while True:
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
-        subprocess.call("clear")
+        os.system('clear')
         print("=======================================================")
         print("             Number of Requests Sent : ", requested)
         print("             Successful Requests     : ", success)
