@@ -136,19 +136,13 @@ iteration = 0
 
 banner()
 
+
 failed = 0
 requested = 0
 sonuc = 0
 success = 0
 
-while True:
-  subprocess.call("clear")
-  print("=======================================================")
-  print("             Number of Requests Sent : ", requested)
-  print("             Successful Requests     : ", success)
-  print("             Failed Requests         : ", failed)
-  print("=======================================================")
-  time.sleep(3)
+
 
     
 while True:
@@ -446,3 +440,11 @@ while True:
 		print(' = {}completed tours '.format(iteration)) 
 	except:
 		break
+while True:
+  subprocess.call("clear")
+  print("=======================================================")
+  print("             Number of Requests Sent : ", requested)
+  print("             Successful Requests     : ", success)
+  print("             Failed Requests         : ", failed)
+  print("=======================================================")
+  time.sleep(3)
