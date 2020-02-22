@@ -9,19 +9,13 @@ colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1
 W='\033[0m'
 def banner():
     logo="""
-
-      ___           ___                 
-     /__/\         /  /\          ___   
-     \  \:\       /  /::\        /  /\  
-      \  \:\     /  /:/\:\      /  /:/  
-  _____\__\:\   /  /:/~/::\    /  /:/   
- /__/::::::::\ /__/:/ /:/\:\  /  /::\   
- \  \:\~~\~~\/ \  \:\/:/__\/ /__/:/\:\  
-  \  \:\  ~~~   \  \::/      \__\/  \:\ 
-   \  \:\        \  \:\           \  \:\
-    \  \:\        \  \:\           \__\/
-     \__\/         \__\/                
-
+    ___       ___       ___   
+   /\__\     /\  \     /\  \  
+  /:| _|_   /::\  \    \:\  \ 
+ /::|/\__\ /::\:\__\   /::\__\
+ \/|::/  / \/\::/  /  /:/\/__/
+   |:/  /    /:/  /   \/__/   
+   \/__/     \/__/           
 """
     print(random.choice(colors)+logo+W)
     print("\n")
@@ -40,6 +34,7 @@ except IOError:
 
     user = input("        'Enter' To Contiune!!!")
     if user == "":os.system('clear')
+    banner()
     user =input('Username :  ')
     passwd = urllib.request.urlopen("https://raw.githubusercontent.com/4nat/reader/master/pass.txt").read()
     npasswd=int(base64.b64decode(passwd))
@@ -68,6 +63,7 @@ def checkinternet():
         banner()
         exit()
 
+banner()
 
 try:
     urllib.request.urlopen('https://www.google.com')
@@ -86,7 +82,6 @@ try:
 except Exception:
     pass
 
-banner()
 
 _phone=input(' Enter Target Number -->  ')
 
