@@ -33,7 +33,6 @@ def banner():
  """
     print(random.choice(colors)+logo+W)
     print("\n")
-    banner()
 try:
     f = open(".4nat")
     print("Login Success!")
