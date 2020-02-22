@@ -141,10 +141,7 @@ failed = 0
 requested = 0
 sonuc = 0
 success = 0
-
 while True:
-	_email = _name+f'{iteration}'+'@gmail.com'
-	email = _name+f'{iteration}'+'@gmail.com'
         subprocess.call("clear")
         print("=======================================================")
         print("             Number of Requests Sent : ", requested)
@@ -152,6 +149,11 @@ while True:
         print("             Failed Requests         : ", failed)
         print("=======================================================")
         time.sleep(2)
+while True:
+	_email = _name+f'{iteration}'+'@gmail.com'
+	email = _name+f'{iteration}'+'@gmail.com'
+
+
 
 
 	try:
