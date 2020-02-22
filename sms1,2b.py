@@ -8,13 +8,14 @@ init()
 colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
 def banner():
-    logo ='''
-   ___  _   _   ___ _____ 
-  /   || \ | | / _ \_   _|
- / /| ||  \| |/ /_\ \| |  
-/ /_| || . ` ||  _  || |  
-\___  || |\  || | | || |  
-    |_/\_| \_/\_| |_/\_/'''
+    logo =''' 
+ __ __                      __      
+/\ \\ \                    /\ \__   
+\ \ \\ \      ___      __  \ \ ,_\  
+ \ \ \\ \_  /' _ `\  /'__`\ \ \ \/  
+  \ \__ ,__\/\ \/\ \/\ \L\.\_\ \ \_ 
+   \/_/\_\_/\ \_\ \_\ \__/.\_\\ \__\
+      \/_/   \/_/\/_/\/__/\/_/ \/__/'''
     print(random.choice(colors)+logo+W)
     print("\n")
 try:
@@ -26,10 +27,8 @@ except IOError:
     print("Please Login")
     print("If u dont know login password come our telegram group | ")
     print("t.me/4natreborn ")
-    print("")
     print("t.me/ichbinharun")
     print ("")
-
     user = input("        'Enter' To Contiune!!!")
     if user == "":os.system('clear')
     banner()
