@@ -2,16 +2,68 @@ import requests, random, datetime, sys, time, argparse, os
 from colorama import init, Fore, Back, Style
 from time import sleep
 import urllib.request
+import random
 init()
+colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
+W='\033[0m'
+def banner():
+    logo="""  
+          _____                    _____                _____          
+         /\    \                  /\    \              /\    \         
+        /::\____\                /::\    \            /::\    \        
+       /::::|   |               /::::\    \           \:::\    \       
+      /:::::|   |              /::::::\    \           \:::\    \      
+     /::::::|   |             /:::/\:::\    \           \:::\    \     
+    /:::/|::|   |            /:::/__\:::\    \           \:::\    \    
+   /:::/ |::|   |           /::::\   \:::\    \          /::::\    \   
+  /:::/  |::|   | _____    /::::::\   \:::\    \        /::::::\    \  
+ /:::/   |::|   |/\    \  /:::/\:::\   \:::\    \      /:::/\:::\    \ 
+/:: /    |::|   /::\____\/:::/  \:::\   \:::\____\    /:::/  \:::\____\
+\::/    /|::|  /:::/    /\::/    \:::\  /:::/    /   /:::/    \::/    /
+ \/____/ |::| /:::/    /  \/____/ \:::\/:::/    /   /:::/    / \/____/ 
+         |::|/:::/    /            \::::::/    /   /:::/    /          
+         |::::::/    /              \::::/    /   /:::/    /           
+         |:::::/    /               /:::/    /    \::/    /            
+         |::::/    /               /:::/    /      \/____/             
+         /:::/    /               /:::/    /                           
+        /:::/    /               /:::/    /                            
+        \::/    /                \::/    /                             
+         \/____/                  \/____/                                                                              
+ """
+    print(random.choice(colors)+logo+W)
+    print("\n")
 
-print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
-   ___  _   _   ___ _____ 
-  /   || \ | | / _ \_   _|
- / /| ||  \| |/ /_\ \| |  
-/ /_| || . ` ||  _  || |  
-\___  || |\  || | | || |  
-    |_/\_| \_/\_| |_/\_/                                              
-''' + Style.RESET_ALL)
+try:
+    f = open(".4nat")
+    print("Login Success!")
+except IOError:
+    print("Please Login")
+    sys.exit()
+finally:
+    f.close()
+
+print("If u dont know login password come our telegram group | ")
+print("t.me/4natreborn ")
+print("")
+print("t.me/ichbinharun")
+print ("")
+
+user = input("        'Enter' To Contiune!!!")
+if user == "":os.system('clear')
+user =input('Username :  ')
+passwd = urllib.request.urlopen(
+"https://raw.githubusercontent.com/4nat/reader/master/pass.txt").read()
+npasswd=int(base64.b64decode(passwd))
+upasswd =int(input('Password :  '))
+os.system('clear')
+time.sleep(2)
+if user=="reborn" and upasswd==npasswd:os.system('clear');print("Login Success!..");os.system("echo fuck society >.4nat")
+elif user=="reborn": os.system('clear');print("Incorrect Password!  >  Error Code : 101");sys.exit()
+elif user!="reborn" and passwd=="235467": os.system('clear');print("Incorrect Username!  >  Error Code : 102");sys.exit()
+elif user=="" and passwd=="": os.system('clear');print("Please Write Username and Password! >  Error Code : 103 ");sys.exit()
+else:  os.system('clear'); print("Incorrect Username and Password! >  Error Code :103");print("");print("Please Contact Develper.");print("t.me/ichbinharun")
+
+
 
 
 
