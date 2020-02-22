@@ -4,6 +4,7 @@ from time import sleep
 import urllib.request
 import random
 import base64
+import subprocess
 init()
 def clr():
     if os.name == 'nt':
