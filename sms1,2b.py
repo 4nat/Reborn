@@ -3,6 +3,7 @@ from colorama import init, Fore, Back, Style
 from time import sleep
 import urllib.request
 import random
+import base64
 init()
 colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
@@ -37,11 +38,7 @@ try:
     f = open(".4nat")
     print("Login Success!")
 except IOError:
-    print("Please Login")
-    sys.exit()
-finally:
-    f.close()
-
+print("Please Login")
 print("If u dont know login password come our telegram group | ")
 print("t.me/4natreborn ")
 print("")
@@ -63,7 +60,8 @@ elif user!="reborn" and passwd=="235467": os.system('clear');print("Incorrect Us
 elif user=="" and passwd=="": os.system('clear');print("Please Write Username and Password! >  Error Code : 103 ");sys.exit()
 else:  os.system('clear'); print("Incorrect Username and Password! >  Error Code :103");print("");print("Please Contact Develper.");print("t.me/ichbinharun")
 
-
+finally:
+    f.close()
 
 
 
