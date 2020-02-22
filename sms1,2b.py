@@ -33,7 +33,7 @@ def banner():
  """
     print(random.choice(colors)+logo+W)
     print("\n")
-
+    banner()
 try:
     f = open(".4nat")
     print("Login Success!")
@@ -58,11 +58,6 @@ except IOError:
     elif user!="reborn" and passwd=="235467": os.system('clear');print("Incorrect Username!  >  Error Code : 102");sys.exit()
     elif user=="" and passwd=="": os.system('clear');print("Please Write Username and Password! >  Error Code : 103 ");sys.exit()
     else:  os.system('clear'); print("Incorrect Username and Password! >  Error Code :103");print("");print("Please Contact Develper.");print("t.me/ichbinharun")
-
-finally:
-    f.close()
-
-
 
 def shutdown(signal, frame):
     print ('\n\033[1;31mCtrl+C was pressed, shutting down!\033[0m')
@@ -97,6 +92,8 @@ try:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
 except Exception:
     pass
+
+banner()
 
 _phone=input(' Enter Target Number -->  ')
 
