@@ -8,29 +8,29 @@ init()
 colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
 def banner():
-    logo="""  
+    logo="""
 
+      ___           ___                 
+     /__/\         /  /\          ___   
+     \  \:\       /  /::\        /  /\  
+      \  \:\     /  /:/\:\      /  /:/  
+  _____\__\:\   /  /:/~/::\    /  /:/   
+ /__/::::::::\ /__/:/ /:/\:\  /  /::\   
+ \  \:\~~\~~\/ \  \:\/:/__\/ /__/:/\:\  
+  \  \:\  ~~~   \  \::/      \__\/  \:\ 
+   \  \:\        \  \:\           \  \:\
+    \  \:\        \  \:\           \__\/
+     \__\/         \__\/                
 
-      ___           ___           ___     
-     /\__\         /\  \         /\  \    
-    /::|  |       /::\  \        \:\  \   
-   /:|:|  |      /:/\:\  \        \:\  \  
-  /:/|:|  |__   /::\~\:\  \       /::\  \ 
- /:/ |:| /\__\ /:/\:\ \:\__\     /:/\:\__\
- \/__|:|/:/  / \/__\:\/:/  /    /:/  \/__/
-     |:/:/  /       \::/  /    /:/  /     
-     |::/  /        /:/  /     \/__/      
-     /:/  /        /:/  /                 
-     \/__/         \/__/                  
-
-                                                                 
- """
+"""
     print(random.choice(colors)+logo+W)
     print("\n")
 try:
     f = open(".4nat")
     print("Login Success!")
 except IOError:
+    os.system('clear')
+    banner()
     print("Please Login")
     print("If u dont know login password come our telegram group | ")
     print("t.me/4natreborn ")
@@ -50,7 +50,7 @@ except IOError:
     elif user=="reborn": os.system('clear');print("Incorrect Password!  >  Error Code : 101");sys.exit()
     elif user!="reborn" and passwd=="235467": os.system('clear');print("Incorrect Username!  >  Error Code : 102");sys.exit()
     elif user=="" and passwd=="": os.system('clear');print("Please Write Username and Password! >  Error Code : 103 ");sys.exit()
-    else:  os.system('clear'); print("Incorrect Username and Password! >  Error Code :103");print("");print("Please Contact Develper.");print("t.me/ichbinharun")
+    else:  os.system('clear'); print("Incorrect Username and Password! >  Error Code :103");print("");print("Please Contact Develper.");print("t.me/ichbinharun");sys.exit()
 
 def shutdown(signal, frame):
     print ('\n\033[1;31mCtrl+C was pressed, shutting down!\033[0m')
