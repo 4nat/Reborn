@@ -149,7 +149,7 @@ while True:
 		print('[-] Magic Bricks Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 	try:
@@ -160,7 +160,7 @@ while True:
 		print('[-] Redbus Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 	try:
@@ -171,7 +171,7 @@ while True:
 		print('[-] Sipnet Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -183,7 +183,7 @@ while True:
 		print('[-] Grab Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 	try:
@@ -195,7 +195,7 @@ while True:
 		print('[-] RuTaxi Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -207,7 +207,7 @@ while True:
 		print('[-] BelkaCar Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -219,7 +219,7 @@ while True:
 		print('[-] Tinder Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -231,7 +231,7 @@ while True:
 		print('[-] Karusel Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -243,7 +243,7 @@ while True:
 		print('[-] Tinkoff Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -255,7 +255,7 @@ while True:
 		print('[-] MTS Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -267,7 +267,7 @@ while True:
 		print('[-] Youla Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -279,7 +279,6 @@ while True:
 		print('[-] PizzaHut Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -291,7 +290,7 @@ while True:
 		print('[-] Rabota Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+ 
 	except:
                 failed += 1
 
@@ -303,7 +302,7 @@ while True:
 		print('[-] Smsint Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+ 
 	except:
                 failed += 1
 
@@ -315,7 +314,7 @@ while True:
 		print('[-] oyorooms Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+ 
 	except:
                 failed += 1
 
@@ -327,7 +326,6 @@ while True:
 		print('[-] MVideo Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -339,7 +337,6 @@ while True:
 		print('[-] newnext Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -351,7 +348,6 @@ while True:
 		print('[-] Sunlight Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -363,7 +359,6 @@ while True:
 		print('[-] alpari Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -375,7 +370,6 @@ while True:
 		print('[-] Invitro Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -388,7 +382,6 @@ while True:
 		print('[-] Sberbank Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -401,7 +394,6 @@ while True:
 		print('[-] Psbank Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -414,7 +406,6 @@ while True:
 		print('[-] Beltelcom Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
 	except:
                 failed += 1
 
@@ -427,7 +418,7 @@ while True:
 		print('[-] Karusel Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -439,7 +430,7 @@ while True:
 		print('[-] KFC Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -452,7 +443,7 @@ while True:
 		print('[-] carsmile Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -464,7 +455,7 @@ while True:
 		print('[-] Citilink Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -476,7 +467,7 @@ while True:
 		print('[-] Delitime Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -488,7 +479,7 @@ while True:
 		print('[-] findclone Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -500,7 +491,7 @@ while True:
 		print('[-] Guru Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -512,7 +503,7 @@ while True:
 		print('[-] ICQ Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -523,7 +514,7 @@ while True:
 		print('[-] InDriver Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -536,7 +527,7 @@ while True:
 		print('[-] Invitro Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -548,7 +539,7 @@ while True:
 		print('[-] Pmsm Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -560,7 +551,7 @@ while True:
 		print('[-] IVI Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -572,7 +563,7 @@ while True:
 		print('[-] Lenta Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -584,7 +575,7 @@ while True:
 		print('[-] Mail.ru Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -596,7 +587,7 @@ while True:
 		print('[-] MVideo Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -608,7 +599,7 @@ while True:
 		print('[-] OK Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -620,7 +611,7 @@ while True:
 		print('[-] Plink Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -632,7 +623,7 @@ while True:
 		print('[-] qlean Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -644,7 +635,7 @@ while True:
 		print('[-] SMSgorod Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -656,7 +647,7 @@ while True:
 		print('[-] Tinder Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -668,7 +659,7 @@ while True:
 		print('[-] Twitch Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -680,7 +671,7 @@ while True:
 		print('[-] CabWiFi Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -692,7 +683,7 @@ while True:
 		print('[-] wowworks Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -704,7 +695,7 @@ while True:
 		print('[-] Eda.Yandex Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -716,7 +707,7 @@ while True:
 		print('[-] Youla Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
@@ -728,7 +719,7 @@ while True:
 		print('[-] Alpari Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 	try:
@@ -739,7 +730,7 @@ while True:
 		print('[-] Delivery Requests Failed!')
 	try:        
                 success += 1
-		print("  Target Number :  " , _phone)
+
 	except:
                 failed += 1
 
