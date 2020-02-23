@@ -1,10 +1,15 @@
-<h1 align="center">Reborn v1.5b</h1>
+<img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/4nat/Reborn/total">
+<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/4nat/Reborn/sms.py">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/4nat/Reborn">
+<a href="https://github.com/4nat/Reborn/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/4nat/Reborn"></a>
+<img alt="Coveralls github" src="https://img.shields.io/coveralls/https://github.com/4nat/Reborn">
+<h1 align="center">Reborn v3.8b</h1>
 <p align="center">An closed-source SMS/Call bomb for Termux and Linux.</p><br>
 <div style="text-align:center"><a href="https://www.buymeacoffee.com/D25JXve" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee Please :)" style="height:21px;width:117px;"></a></div>
 
 # Reborn WhatsApp Discuss Group Link : https://chat.whatsapp.com/CfCZxrbmTmpCJvesj0itoS
 
-# Any Question or Contact https://t.me/reborn4nat
+## Any Question or Contact https://t.me/reborn4nat
 
 # --> Disclaimer.
 The author is not responsible for damaged phones. Apply this miracle only in the study tour purposes.
@@ -14,7 +19,7 @@ The author is not responsible for damaged phones. Apply this miracle only in the
  Don't put spaces in between phone number (Ex- 99999 99999)
  Make sure you are using Python.
 
-# --> For Linux:
+## --> For Linux:
 To use the bomber type the following commands in Linux terminal:
  sudo apt install git
  git clone https://github.com/4nat/Reborn.git
@@ -24,7 +29,7 @@ To use the bomber type the following commands in Linux terminal:
  In paragraph "Enter Number" write the phone number with "+"
  Bomber launched!
 
-# --> For Termux:
+## --> For Termux:
 git clone https://github.com/4nat/Reborn/
  Go to the directory:
  cd Reborn
