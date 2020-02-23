@@ -2,7 +2,6 @@
 <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/4nat/Reborn/sms.py">
 <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/4nat/Reborn">
 <a href="https://github.com/4nat/Reborn/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/4nat/Reborn"></a>
-<img alt="Coveralls github" src="https://img.shields.io/coveralls/https://github.com/4nat/Reborn">
 <h1 align="center">Reborn v3.8b</h1>
 <p align="center">An closed-source SMS/Call bomb for Termux and Linux.</p><br>
 <div style="text-align:center"><a href="https://www.buymeacoffee.com/D25JXve" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee Please :)" style="height:21px;width:117px;"></a></div>
