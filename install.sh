@@ -1,6 +1,17 @@
 #!/bin/bash
 clear
-
+if [[ -s update.4nat ]];then
+echo "All Requirements Found...."
+echo -e "\e[1;32m Reborn \e[0m"
+echo "Press Enter To Continue"
+read a1
+clear
+python sms.py
+clear
+else
+echo 'Installing Requirements....'
+echo .
+fi
 echo "-----------------------------------------------------------------------"
 echo "|                         YOUTUBE.COM/HARUNMISTIK     		     |"
 echo "|                        INSTAGRAM.COM/ICHBINHARUN                    |"
