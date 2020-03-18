@@ -34,6 +34,9 @@ then
 	dos2unix /data/data/com.termux/files/usr/bin/Reborn
 	chmod 777 /data/data/com.termux/files/usr/bin/Reborn
 	Reborn
+	echo Made By 4NAT >update.4nat
+	echo Requirements Installed....
+	echo Press Enter To Continue...
 	python3 sms.py
 else
 	if [ $numb = "2" ]
@@ -50,6 +53,9 @@ else
 			dos2unix /usr/bin/Reborn
 			chmod 777 /usr/bin/Reborn
 			Reborn
+			echo Made By 4NAT >update.4nat
+			echo Requirements Installed....
+			echo Press Enter To Continue...
 			python3 sms.py
 		fi
 	else
@@ -64,6 +70,9 @@ else
 			dos2unix /usr/bin/Reborn
 			chmod 777 /usr/bin/Reborn
 			Reborn
+			echo Made By 4NAT >update.4nat
+			echo Requirements Installed....
+			echo Press Enter To Continue...
 			python3 sms.py
 		else
 			echo "Error !!"
