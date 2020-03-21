@@ -30,6 +30,9 @@ then
 	pkg install dos2unix
 	pip3 install requests
 	pip3 install colorama
+        pip install pymysql
+        pip install mysql-connector-python
+        pip install passlib
 	cp ~/Reborn/sms.py /data/data/com.termux/files/usr/bin/Reborn
 	dos2unix /data/data/com.termux/files/usr/bin/Reborn
 	chmod 777 /data/data/com.termux/files/usr/bin/Reborn
