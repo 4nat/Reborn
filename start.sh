@@ -12,10 +12,10 @@ else
 echo 'Installing Requirements....'
 echo .
 fi
-echo "-----------------------------------------------------------------------"
-echo "|                         YOUTUBE.COM/HARUNMISTIK     		     |"
-echo "|                        INSTAGRAM.COM/ICHBINHARUN                    |"
-echo "-----------------------------------------------------------------------"
+echo "--------------------------------------------------"
+echo "|              YOUTUBE.COM/HARUNMISTIK           |"
+echo "|              INSTAGRAM.COM/ICHBINHARUN         |"
+echo "-------------------------------------------------"
 echo " 1. Termux"
 echo " 2. Debian / Linux Or Other OS."
 echo " 3. Ios"
@@ -33,6 +33,8 @@ then
         pip install pymysql
         pip install mysql-connector-python
         pip install passlib
+	pip install 'prompt_toolkit==1.0.14'
+	pip install SelectMenu
 	cp ~/Reborn/sms.py /data/data/com.termux/files/usr/bin/Reborn
 	dos2unix /data/data/com.termux/files/usr/bin/Reborn
 	chmod 777 /data/data/com.termux/files/usr/bin/Reborn
@@ -60,6 +62,14 @@ else
 			echo Requirements Installed....
 			echo Press Enter To Continue...
 			python3 sms.py
+			pip install 'prompt_toolkit==1.0.14'
+			pip install SelectMenu
+			pip install pymysql
+			pip install mysql-connector-python
+			pip install passlib
+			echo Made By 4NAT >update.4nat
+			echo Requirements Installed....
+			echo Press Enter To Continue...
 		fi
 	else
 		if [ $numb = "3" ] 
@@ -77,6 +87,8 @@ else
 			echo Requirements Installed....
 			echo Press Enter To Continue...
 			python3 sms.py
+			pip install 'prompt_toolkit==1.0.14'
+			pip install SelectMenu
 		else
 			echo "Error !!"
 		fi
