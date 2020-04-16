@@ -1,0 +1,5 @@
+colorama
+requests
+prompt_toolkit==1.0.14
+SelectMenu
+urllib
