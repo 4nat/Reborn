@@ -1,4 +1,4 @@
-# Python code obfuscated by www.development-tools.net 
+#madeby4nat
  
 
 import base64, codecs
