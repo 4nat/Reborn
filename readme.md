@@ -3,10 +3,9 @@
 <div style="text-align:center"><a href="https://www.buymeacoffee.com/D25JXve" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee Please :)" style="height:21px;width:117px;"></a></div>
 
 
-# Any Question or Contact https://t.me/reborn4nat
 # --> Disclaimer.
 The author is not responsible for damaged phones. Apply this miracle only in the study tour purposes.
-# -->Partner : https://black-wolf.tech
+# -->Partner : -
 # --> Note:
  The script requires working network connection to work.
  Don't put spaces in between phone number (Ex- 99999 99999)
